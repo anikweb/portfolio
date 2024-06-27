@@ -7,7 +7,7 @@ body {
 .laravel-logo {
     position: absolute;
     right: -14px;
-    top: -100px;
+    top: -40px;
     transform: rotate(31deg);
 }
 .php-logo {
@@ -72,7 +72,7 @@ p{
     .laravel-logo {
         width: 100px;
         top: -2px;
-        right: -21px;
+        right: -19px;
     }
     .php-logo {
         top: -10px;
