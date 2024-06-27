@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&family=Grape+Nuts&family=Nova+Square&display=swap');
+
+body {
+    background-image: url("https://tailwindui.com/img/beams-home@95.jpg");
+}
+.laravel-logo {
+    position: absolute;
+    right: -14px;
+    top: -100px;
+    transform: rotate(31deg);
+}
+.php-logo {
+    position: absolute;
+    left: -24px;
+    top: -114px;
+    transform: rotate(353deg);
+}
+.js-logo {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    transform: rotate(20deg);
+}
+.card {
+    position: relative;
+}
+.my-name {
+    font-family: "Nova Square", sans-serif;
+    font-style: normal;
+  font-weight: 400;
+
+}
+.subtitle{
+     font-family: "Grape Nuts", cursive;
+    font-weight: 400;
+    font-style: normal;    
+}
+p{
+    font-family: "Fragment Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+#text {
+    overflow: hidden;
+    margin: 0 auto;
+    display: inline-block;
+    font-weight: normal;
+
+}
+#text:after{
+    content: '';
+    display: inline-block;
+    background-color: white;
+    margin-left: 2px;
+    height: 13px;
+    width: 2.1px;
+    animation: cursor 1s infinite;
+}
+
+	/* The typewriter cursor effect */
+@keyframes cursor {
+    0% { opacity: 1; }
+        49% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 0; }
+}
+
+@media only screen and (max-width: 600px) {
+    .laravel-logo {
+        width: 100px;
+        top: -2px;
+        right: -21px;
+    }
+    .php-logo {
+        top: -10px;
+    }
+    .js-logo {
+        position: absolute;
+        top: 102px;
+        left: 4px;
+    }
+
+}
