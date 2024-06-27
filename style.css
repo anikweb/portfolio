@@ -43,13 +43,6 @@ p{
 }
 
 
-#text {
-    overflow: hidden;
-    margin: 0 auto;
-    display: inline-block;
-    font-weight: normal;
-
-}
 #text:after{
     content: '';
     display: inline-block;
