@@ -13,13 +13,13 @@ body {
 .php-logo {
     position: absolute;
     left: -24px;
-    top: 0px;
+    top: -61px;
     transform: rotate(353deg);
 }
 .js-logo {
     position: absolute;
     left: 0;
-    top: -10px;
+    top: -27px;
     transform: rotate(20deg);
 }
 .card {
