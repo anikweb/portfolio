@@ -19,7 +19,7 @@ body {
 .js-logo {
     position: absolute;
     left: 0;
-    top: -27px;
+    top: 27px;
     transform: rotate(20deg);
 }
 .card {
