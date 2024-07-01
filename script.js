@@ -31,6 +31,21 @@ $("#nav-home").click(function(){
     $("html, body").animate({ scrollTop: 0 }, "slow");
 
 })
+$("#nav-experience").click(function(){
+    $(".section-wrapper").addClass("hidden")
+    $("#experience").removeClass("hidden")
+
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+
+})
+
+$("#nav-portfolio").click(function(){
+    $(".section-wrapper").addClass("hidden")
+    $("#portfolio").removeClass("hidden")
+
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+
+})
 
 // expand and collapse skills
 $(".skill-toggle-btn").click(function(){
@@ -46,3 +61,26 @@ $(".skill-toggle-btn").click(function(){
 
     $(this).parent().siblings().toggle(500);    
 });
+
+function calculateDifference(startDate, endDate) {
+    // Convert the dates to Date objects
+    const start = new Date(startDate);
+    const end = new Date(endDate);
+
+    // Calculate the difference in years and months
+    let years = end.getFullYear() - start.getFullYear();
+    let months = end.getMonth() - start.getMonth();
+
+    // Adjust the years and months if needed
+    if (months < 0) {
+        years--;
+        months += 12;
+    }
+
+    return `${years} years ${months} months`;
+}
+
+// now days format yyyy-mm-dd
+const currentDate = new Date().toISOString().slice(0,10);
+console.log(currentDate);
+$(".experience-year").html(calculateDifference('2023-01-01', currentDate));
