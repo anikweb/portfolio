@@ -82,5 +82,18 @@ function calculateDifference(startDate, endDate) {
 
 // now days format yyyy-mm-dd
 const currentDate = new Date().toISOString().slice(0,10);
-console.log(currentDate);
 $(".experience-year").html(calculateDifference('2023-01-01', currentDate));
+
+$(".exp-skill-toggle").click(function(){
+
+    $(this).find('i').toggleClass('rotate-180');
+    if($(this).find('span').text() === "+10"){
+        $(this).find('span').text("-13");
+    }else{
+        $(this).find('span').text("+13");
+    }
+
+
+    $(this).parent().parent().find('.exp-skills-h-item').toggle(800);
+    
+});
